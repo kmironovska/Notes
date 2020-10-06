@@ -1,3 +1,8 @@
+
+body{
+  background-color: gainsboro;
+}
+
 .App {
   text-align: center;
 }
@@ -7,21 +12,67 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+  background-color: #1a6c4b;
+  box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+  max-height: 40px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.button-field {
+  line-height: 1.5715;
+  height: 32px;
+  padding: 4px 15px;
+  font-size: 14px;
+  border-radius: 2px;
+  color: rgba(0,0,0,.85);
+  background: #fff;
+  border: 1px solid #d9d9d9;
+}
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.header-logo {
+  font-size: 1.5em;
+  cursor: pointer;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+.manage-tags-button {
+  height: 25px;
+  line-height: 15px;
+  margin-right: 20px;
+  margin-top:8px;
+  margin-bottom: 8px;
+}
+.create-note-button{
+  font-family: sans-serif;
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 60px;
+  color: #1a6c4b;
+  line-height: 60px;
+  font-size: 3em;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1000;
 }
 
 .App-link {
@@ -35,4 +86,68 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App-footer{
+  background-color: gainsboro;
+  min-height: 5vh;
+}
+
+.manage-tags-page {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 3px;
+  background: -webkit-gradient(linear,left top,left bottom,from(#fdf4bb),to(#e8dc88));
+  background: linear-gradient(#fdf4bb,#e8dc88);
+  box-shadow: 0 4px 6px rgba(0,0,0,.1);
+  -webkit-transition: box-shadow .5s ease;
+  transition: box-shadow .5s ease;
+  word-wrap: break-word;
+}
+.row{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.text-field, .textarea-field {
+  padding: 4px 11px;
+  color: rgba(0,0,0,.85);
+  font-size: 14px;
+  line-height: 1.5715;
+  background-color: #fff;
+}
+
+.text-field {
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+}
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.existing-tags {
+  margin-bottom: 2px;
+}
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.note-form {
+  margin-top: 20px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  background: -webkit-gradient(linear,left top,left bottom,from(#fdf4bb),to(#e8dc88));
+  background: linear-gradient(#fdf4bb,#e8dc88);
+  box-shadow: 0 4px 6px rgba(0,0,0,.1);
+  -webkit-transition: box-shadow .5s ease;
+  transition: box-shadow .5s ease;
+  word-wrap: break-word;
 }

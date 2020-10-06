@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.noteform {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto 15px;
+}
+.noteform h3 {
+  color: #171717;
+}
+.noteform .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.remove{
+  margin-right: 20px;
+  color: #FF0000;
+  font-size: 18px;
+  font-weight: 700;
+}
