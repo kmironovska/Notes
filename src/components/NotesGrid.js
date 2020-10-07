@@ -29,7 +29,7 @@ export default class NotesGrid extends Component {
                         notes: this.state.notes.filter(note => note.id !== id)
                     })
                 }
-            }).catch(e => console.log('hhhhhh'))
+            }).catch(e => console.log('error'))
 
     }
 
